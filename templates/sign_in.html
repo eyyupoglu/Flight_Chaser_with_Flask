@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="utf-8"/>
+                <title>Flight Ticket Searcher</title>
+                <link rel="stylesheet" href="static/css/bootstrap.min.css">
+        </head>
+<body>
+
+<div class="container">
+  <h2>Sign in to your account to start a flight chase!</h2>
+  <form class="w3-container" action="/sign_in" method="post">
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+    
+  </form>
+
+
+</div>
+
+</body>
+</html>
