@@ -68,3 +68,6 @@ Restart apache
 
 6)
 http://127.0.0.1/horizonreg/users/123
+
+- Checking the servers listening port 
+"sudo netstat -tulpn | grep :80"
