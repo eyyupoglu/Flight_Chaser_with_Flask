@@ -71,3 +71,24 @@ http://127.0.0.1/horizonreg/users/123
 
 - Checking the servers listening port 
 "sudo netstat -tulpn | grep :80"
+
+Restart apache
+in order to see which user the apache is being run by 
+ps aux | egrep '(apache|httpd)'
+
+3-in order to see permissions of files under the directory
+ls -l on /var/www/html/FlaskApp/FlaskApp
+
+4-in order to change the "owner" of the files
+chown root:root user_data.txt
+
+5-in order to give permission
+chmod -R 777 /var/www/html/FlaskApp/FlaskApp/__init__.py
+
+NOTE: 
+4: read
+2: write
+1: execute
+0: no permission
+
+you simply add these values and give permission to the user class etc.
